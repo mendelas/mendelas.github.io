@@ -18,7 +18,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: uploads/cv_2024.pdf
       headings:
         about: ''
         education: ''
@@ -42,11 +42,10 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        I am a PhD student at Tohoku University as a member of the Tough Robotics Lab. My research focuses on Simultaneous Localization and Mapping (SLAM) essential for autonomous driving. Communication generally remains uninterrupted during autonomous driving for safety reasons. However, achieving this in real-world environments is extremely challenging. Therefore, based on the concept of Integrated Sensing and Communication (ISAC), I am developing a method to simultaneously optimize both the accuracy of a robot's self-localization and the quality of its communication.
 
         Please reach out to collaborate 😃
+
     design:
       columns: '1'
   - block: collection

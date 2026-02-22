@@ -15,10 +15,10 @@ status:
   icon: "🚀"
 role: Phd Student at Tohoku University
 bio: |
-  Kota is a SLAM and radio sensing specialist working on Physical AI—building autonomous systems that can perceive, communicate, and navigate in the real world. His research bridges SLAM and Integrated Sensing and Communication (ISAC), integrating wireless measurements with robotic perception to achieve robust localization and mapping in challenging, low-feature environments. He combines wireless signal processing with probabilistic state estimation to make SLAM radio-aware and communication sensing-capable.
+  I am a SLAM and radio sensing specialist working on Physical AI—building autonomous systems that can perceive, communicate, and navigate in the real world. His research bridges SLAM and Integrated Sensing and Communication (ISAC), integrating wireless measurements with robotic perception to achieve robust localization and mapping in challenging, low-feature environments. I combine wireless signal processing with probabilistic state estimation to make SLAM radio-aware and communication sensing-capable.
 
 affiliations:
-  - name: Tough Robotics Lab at Tohoku University
+  - name: Tough Robotics Lab
     url: https://tr.is.tohoku.ac.jp/
 
 links:
@@ -51,43 +51,68 @@ education:
     summary: |
       Research on Physical AI, SLAM, and Integrated Sensing and Communication (ISAC),focusing on radio-aware localization and mapping.
     button:
-      text: Download dissertation
-      url: /resume.pdf
+      text: Tough Robotics Lab
+      url: https://tr.is.tohoku.ac.jp/
       icon: hero/arrow-down-tray
   - degree: MS AeroSpace Engineering
     institution: Tohoku University
     start: 2024-04-01
     end: 2026-03-31
+    button:
+      text: Space Robotics Lab
+      url: https://astro2.mech.tohoku.ac.jp/
+      icon: hero/arrow-down-tray
   - degree: BS AeroSpace Engineering
     institution: Osaka Metropolitan University
     start: 2020-04-01
     end: 2024-03-31
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: Research Assistant
+    org: National Institute of Information and Communications Technology (NICT)
+    start: 2026-04-01
+    #end: 2026-03-31
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+      Conducting research on methods for utillizing Wi-Fi Signals as Sensors. Accepted by a top-tier journal.
     button:
-      text: View portfolio
-      url: /
+      text: Lab website
+      url: https://www.nict.go.jp/resil/
       icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+
+  - role: Research Assistant
+    org: National Institute of Advanced Industrial Science and Technology (AIST)
+    start: 2024-11-01
+    # end: 2026-03-31
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      Conducting research on tightly coupling radio waves with LiDAR-IMU SLAM. accepted by a top-tier journal.
+    button:
+      text: Lab website
+      url: https://www.digiarc.aist.go.jp/
+      icon: hero/arrow-down-tray
+
+  - role: Space Robotics Intern
+    org: Space Quarters
+    start: 2022-01-01
+    end: 2025-03-31
+    summary: |
+      Conducted research on welding robots for the construction of space structures.
+    button:
+      text: Company website
+      url: https://space-quarters.com/
+      icon: hero/arrow-down-tray
 
 skills:
   - name: Technical Skills
     items:
       - label: Python
         level: 5
-      - label: Machine Learning
+      - label: C++
         level: 5
-      - label: Cloud Computing
+      - label: ROS
+        level: 4
+      - label: SLAM Algorithms
+        level: 5
+      - label: Wireless Signal Processing
         level: 4
   - name: Research & Communication
     items:
@@ -97,18 +122,26 @@ skills:
         level: 4
       - label: Grant Proposals
         level: 4
+  - name: Sports
+    items:
+      - label: Soccer
+        level: 5
+      - label: Marathon
+        level: 4
+      - label: Table Tennis
+        level: 3
 
 languages:
   - name: English
-    level: 5
-    label: Native
-  - name: Spanish
     level: 4
     label: Fluent
+  - name: Japanese
+    level: 4
+    label: Native
 
 awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+  # - title: Best Paper Award
+  #   awarder: NeurIPS
+  #   date: "2022-12-01"
+  #   summary: Awarded for groundbreaking work on efficient training of large models.
+  #   icon: hero/trophy
