@@ -75,7 +75,7 @@ sections:
       text: ""
       button:
         text: View all publications
-        url: /publications/
+        url: /content/en/publications/
     design:
       spacing:
         padding: [0, 0, 0, 0]
