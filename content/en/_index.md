@@ -71,16 +71,15 @@ sections:
       order: desc
     design:
       view: citation
-  - block: cta
+  - block: markdown
     content:
       title: ""
-      text: ""
-      button:
-        text: View all publications
-        url: /publications/
+      text: |
+        <div style="text-align:right; margin-top:0.25rem;">
+        <a class="btn btn-primary" href="/publications/">View all publications →</a>
+        </div>
     design:
-      spacing:
-        padding: [0, 0, 0, 0]
+      columns: '1'
   # - block: collection
   #   id: talks
   #   content:
@@ -119,16 +118,15 @@ sections:
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
-  - block: cta
+  - block: markdown
     content:
       title: ""
-      text: ""
-      button:
-        text: View all news
-        url: /blog/
+      text: |
+        <div style="text-align:right; margin-top:0.25rem;">
+        <a class="btn btn-primary" href="/blog/">View all news →</a>
+        </div>
     design:
-      spacing:
-        padding: [0, 0, 0, 0]
+      columns: '1'
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:
