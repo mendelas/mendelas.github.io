@@ -69,16 +69,16 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: cta
-    content:
-      title: ""
-      text: ""
-      button:
-        text: View all publications
-        url: /publications/
-    design:
-      spacing:
-        padding: [0, 0, 0, 0]
+  # - block: cta
+  #   content:
+  #     title: ""
+  #     text: ""
+  #     button:
+  #       text: View all publications
+  #       url: /publications/
+  #   design:
+  #     spacing:
+  #       padding: [0, 0, 0, 0]
   - block: collection
     id: talks
     content:
