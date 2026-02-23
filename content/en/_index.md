@@ -118,15 +118,15 @@ sections:
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
-  - block: markdown
-    content:
-      title: ""
-      text: |
-        <div style="text-align:right; margin-top:0.25rem;">
-        <a class="btn btn-primary" href="/blog/">View all news →</a>
-        </div>
-    design:
-      columns: '1'
+  # - block: markdown
+  #   content:
+  #     title: ""
+  #     text: |
+  #       <div style="text-align:right; margin-top:0.25rem;">
+  #       <a class="btn btn-primary" href="/blog/">View all news →</a>
+  #       </div>
+  #   design:
+  #     columns: '1'
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:
