@@ -48,37 +48,39 @@ sections:
 
     design:
       columns: '1'
-  - block: collection
-    id: papers
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
+  # - block: collection
+  #   id: papers
+  #   content:
+  #     title: Featured Publications
+  #     filters:
+  #       folders:
+  #         - publications
+  #       featured_only: true
+  #   design:
+  #     view: article-grid
+  #     columns: 2
   - block: collection
     content:
       title: Recent Publications
       text: ''
+      count: 5
       filters:
         folders:
           - publications
         exclude_featured: false
+      order: desc
     design:
       view: citation
-  # - block: cta
-  #   content:
-  #     title: ""
-  #     text: ""
-  #     button:
-  #       text: View all publications
-  #       url: /publications/
-  #   design:
-  #     spacing:
-  #       padding: [0, 0, 0, 0]
+  - block: cta
+    content:
+      title: ""
+      text: ""
+      button:
+        text: View all publications
+        url: /publications/
+    design:
+      spacing:
+        padding: [0, 0, 0, 0]
   # - block: collection
   #   id: talks
   #   content:
@@ -97,7 +99,7 @@ sections:
       # Page type to display. E.g. post, talk, publication...
       page_type: blog
       # Choose how many pages you would like to display (0 = all pages)
-      count: 10
+      count: 5
       # Filter on criteria
       filters:
         author: ''
@@ -115,6 +117,16 @@ sections:
       # Choose a layout view
       view: card
       # Reduce spacing
+      spacing:
+        padding: [0, 0, 0, 0]
+  - block: cta
+    content:
+      title: ""
+      text: ""
+      button:
+        text: View all news
+        url: /blog/
+    design:
       spacing:
         padding: [0, 0, 0, 0]
   - block: cta-card

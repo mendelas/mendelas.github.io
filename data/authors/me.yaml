@@ -15,7 +15,8 @@ status:
   icon: "🚀"
 role: Phd Student at Tohoku University
 bio: |
-  I am a SLAM and radio sensing specialist working on Physical AI—building autonomous systems that can perceive, communicate, and navigate in the real world. His research bridges SLAM and Integrated Sensing and Communication (ISAC), integrating wireless measurements with robotic perception to achieve robust localization and mapping in challenging, low-feature environments. I combine wireless signal processing with probabilistic state estimation to make SLAM radio-aware and communication sensing-capable.
+  Deployable Physical AI for reliable autonomy.
+  I build localization and mapping systems that stay robust in challenging environments by combining robotics and wireless sensing.
 
 affiliations:
   - name: Tough Robotics Lab
