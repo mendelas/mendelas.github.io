@@ -65,6 +65,8 @@ sections:
       text: ''
       page_type: blog
       count: 5
+      archive:
+        enable: true
       filters:
         author: ''
         category: ''

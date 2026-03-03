@@ -1,14 +1,14 @@
 main:
-  - name: バイオ
+  - name: 経歴
     url: /ja/
     weight: 10
-  - name: 論文
+  - name: 研究業績
     url: /ja/publications/
     weight: 11
   - name: ニュース
     url: /ja/blog/
     weight: 13
-  - name: 経歴
+  - name: 経験
     url: /ja/experience/
     weight: 20
   - name: プロジェクト

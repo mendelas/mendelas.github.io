@@ -12,7 +12,7 @@ design:
 sections:
   - block: resume-experience
     content:
-      username: me
+      username: me-ja
     design:
       # Hugo date format
       date_format: '2006年1月'
@@ -21,7 +21,7 @@ sections:
   - block: resume-skills
     content:
       title: スキル・趣味
-      username: me
+      username: me-ja
   - block: markdown
     content:
       title: '受賞歴'
@@ -34,5 +34,5 @@ sections:
   - block: resume-languages
     content:
       title: 言語
-      username: me
+      username: me-ja
 ---

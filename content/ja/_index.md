@@ -10,7 +10,7 @@ design:
 sections:
   - block: resume-biography-3
     content:
-      username: me
+      username: me-ja
       text: ''
       headings:
         about: ''
@@ -56,6 +56,8 @@ sections:
       text: ''
       page_type: blog
       count: 5
+      archive:
+        enable: true
       filters:
         author: ''
         category: ''
