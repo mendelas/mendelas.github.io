@@ -23,19 +23,19 @@ affiliations:
     url: https://tr.is.tohoku.ac.jp/
 
 links:
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/kota-ikeno-5930102a8/
   - icon: brands/x
     url: https://x.com/ikeno_rs
   - icon: brands/github
     url: https://github.com/mendelas
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/kota-ikeno-5930102a8/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=example
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/my-orcid?orcid=0009-0001-3669-9429
 
 interests:
-  - Pysical AI
+  - Physical AI
   - SLAM
   - Integrated Sensing and Communication (ISAC)
   - Wireless Sensing & Signal Processing 
