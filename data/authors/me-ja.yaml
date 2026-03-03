@@ -1,0 +1,156 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: 池野　航太
+  given: 航太
+  family: 池野
+  alternate: 'Kota Ikeno'
+  pronunciation: ''
+  pronouns: he/him
+postnominals:
+  - 博士前期課程
+status:
+  icon: "🤖"
+role: 東北大学 博士後期課程 / タフロボット研究室
+bio: |
+  ロバストな自律システムのための展開可能な Physical AI を研究しています。
+  ロボティクスと無線センシングを組み合わせ，困難な環境でも高精度に動作する自己位置推定・地図生成システムの開発に取り組んでいます。
+
+affiliations:
+  - name: タフロボット研究室
+    url: https://tr.is.tohoku.ac.jp/
+
+links:
+  - icon: brands/x
+    url: https://x.com/ikeno_rs
+  - icon: brands/github
+    url: https://github.com/mendelas
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/kota-ikeno-5930102a8/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=example
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-1825-0097
+
+interests:
+  - Physical AI
+  - SLAM
+  - 統合センシングコミュニケーション（ISAC）
+  - 無線センシング・信号処理
+  - 宇宙ロボティクス
+
+education:
+  - degree: 博士後期課程 情報科学
+    institution: 東北大学
+    logo: tough-robotics.png
+    start: 2026-04-01
+    summary: |
+      Physical AI，SLAM，統合センシングコミュニケーション（ISAC）に関する研究。無線を活用した自己位置推定・地図生成システムを研究しています。
+    button:
+      text: タフロボット研究室
+      url: https://tr.is.tohoku.ac.jp/
+      icon: hero/arrow-down-tray
+  - degree: 修士課程 航空宇宙工学
+    institution: 東北大学
+    logo: space-robotics.png
+    start: 2024-04-01
+    end: 2026-03-31
+    summary: |
+      宇宙ロボット研究室にて，特徴のない環境における月面ローバの自己位置推定・ナビゲーション手法を研究。
+    button:
+      text: 宇宙ロボット研究室
+      url: https://astro2.mech.tohoku.ac.jp/
+      icon: hero/arrow-down-tray
+  - degree: 学士課程 航空宇宙工学
+    institution: 大阪公立大学
+    logo: omu.svg
+    start: 2020-04-01
+    end: 2024-03-31
+
+experience:
+  - role: リサーチアシスタント
+    org: 情報通信研究機構（NICT）
+    logo: nict.svg
+    start: 2026-04-01
+    summary: |
+      Wi-Fi 信号をセンサとして活用する手法の研究を実施。トップジャーナルに採択済み。
+    button:
+      text: 研究室サイト
+      url: https://www.nict.go.jp/resil/
+      icon: hero/arrow-down-tray
+
+  - role: リサーチアシスタント
+    org: 産業技術総合研究所（AIST）
+    logo: aist.png
+    start: 2024-11-01
+    summary: |
+      電波と LiDAR-IMU SLAM の密結合に関する研究を実施。トップジャーナルに採択済み。
+    button:
+      text: 研究室サイト
+      url: https://www.digiarc.aist.go.jp/
+      icon: hero/arrow-down-tray
+
+  - role: 宇宙ロボティクスインターン
+    org: スペースクォーターズ株式会社
+    logo: space-quarters.png
+    start: 2022-01-01
+    end: 2025-03-31
+    summary: |
+      宇宙構造物建設のための溶接ロボットに関する研究を実施。
+    button:
+      text: 企業サイト
+      url: https://space-quarters.com/
+      icon: hero/arrow-down-tray
+
+skills:
+  - name: 技術スキル
+    items:
+      - label: Python
+        level: 5
+      - label: C++
+        level: 5
+      - label: ROS
+        level: 4
+      - label: SLAM アルゴリズム
+        level: 5
+      - label: 無線信号処理
+        level: 4
+  - name: 研究・コミュニケーション
+    items:
+      - label: 学術論文執筆
+        level: 5
+      - label: 学会発表
+        level: 4
+      - label: 研究費申請
+        level: 4
+  - name: スポーツ
+    items:
+      - label: サッカー
+        level: 5
+      - label: マラソン
+        level: 4
+      - label: 卓球
+        level: 3
+
+languages:
+  - name: 英語
+    level: 4
+    label: 流暢
+  - name: 日本語
+    level: 5
+    label: ネイティブ
+
+awards:
+  - title: 高精度測位チャレンジ 2023 第3位入賞
+    awarder: 測位航法学会（GPS/GNSSシンポジウム 2023）
+    date: "2023-10-01"
+    icon: hero/trophy
+  - title: 大阪公立大学 学長顕彰（2023年度）
+    awarder: 大阪公立大学
+    date: "2024-03-01"
+    icon: hero/trophy
+  - title: 大阪府立大学 学賞顕彰（2021年度）
+    awarder: 大阪府立大学
+    date: "2022-03-01"
+    icon: hero/trophy
