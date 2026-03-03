@@ -71,7 +71,7 @@ education:
     end: 2024-03-31
 
 experience:
-  - role: Research Assistant
+  - role: NICT RA
     org: National Institute of Information and Communications Technology (NICT)
     logo: nict.svg
     start: 2026-04-01
@@ -83,7 +83,7 @@ experience:
       url: https://www.nict.go.jp/resil/
       icon: hero/arrow-down-tray
 
-  - role: Research Assistant
+  - role: AIST RA
     org: National Institute of Advanced Industrial Science and Technology (AIST)
     logo: aist.png
     start: 2024-11-01

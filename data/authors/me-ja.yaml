@@ -69,7 +69,7 @@ education:
     end: 2024-03-31
 
 experience:
-  - role: リサーチアシスタント
+  - role: NICT RA
     org: 情報通信研究機構（NICT）
     logo: nict.svg
     start: 2026-04-01
@@ -80,7 +80,7 @@ experience:
       url: https://www.nict.go.jp/resil/
       icon: hero/arrow-down-tray
 
-  - role: リサーチアシスタント
+  - role: AIST RA
     org: 産業技術総合研究所（AIST）
     logo: aist.png
     start: 2024-11-01
