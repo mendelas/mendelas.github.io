@@ -48,15 +48,6 @@ sections:
       order: desc
     design:
       view: citation
-  - block: markdown
-    content:
-      title: ""
-      text: |
-        <div style="text-align:right; margin-top:-1rem;">
-        <a href="/ja/publications/" style="display:inline-flex;align-items:center;gap:0.4rem;font-weight:600;font-size:0.9rem;color:var(--color-primary-600);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;">論文一覧 →</a>
-        </div>
-    design:
-      columns: '1'
   - block: collection
     id: news
     content:
@@ -79,13 +70,4 @@ sections:
       view: card
       spacing:
         padding: [0, 0, 0, 0]
-  - block: markdown
-    content:
-      title: ""
-      text: |
-        <div style="text-align:right; margin-top:-1rem;">
-        <a href="/ja/#news" style="display:inline-flex;align-items:center;gap:0.4rem;font-weight:600;font-size:0.9rem;color:var(--color-primary-600);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;">ニュース一覧 →</a>
-        </div>
-    design:
-      columns: '1'
 ---

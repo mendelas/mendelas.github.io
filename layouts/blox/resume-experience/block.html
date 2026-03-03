@@ -36,10 +36,10 @@
     {{ if not $role }}{{ with index . "position" }}{{ $role = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
     {{ with index . "org" }}{{ $org = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ if not $org }}{{ with index . "company_name" }}{{ $org = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
-    {{ with index . "start" }}{{ $start = strings.TrimSpace (printf "%v" .) }}{{ end }}
-    {{ if not $start }}{{ with index . "date_start" }}{{ $start = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
-    {{ with index . "end" }}{{ $end = strings.TrimSpace (printf "%v" .) }}{{ end }}
-    {{ if not $end }}{{ with index . "date_end" }}{{ $end = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
+    {{ with index . "start" }}{{ $start = . }}{{ end }}
+    {{ if not $start }}{{ with index . "date_start" }}{{ $start = . }}{{ end }}{{ end }}
+    {{ with index . "end" }}{{ $end = . }}{{ end }}
+    {{ if not $end }}{{ with index . "date_end" }}{{ $end = . }}{{ end }}{{ end }}
     {{ with index . "summary" }}{{ $summary = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ with index . "icon" }}{{ $icon = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ with index . "logo" }}{{ $logo = strings.TrimSpace (printf "%v" .) }}{{ end }}
@@ -74,10 +74,10 @@
     {{ with index . "degree" }}{{ $degree = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ if not $degree }}{{ with index . "area" }}{{ $degree = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
     {{ with index . "institution" }}{{ $institution = strings.TrimSpace (printf "%v" .) }}{{ end }}
-    {{ with index . "start" }}{{ $start = strings.TrimSpace (printf "%v" .) }}{{ end }}
-    {{ if not $start }}{{ with index . "date_start" }}{{ $start = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
-    {{ with index . "end" }}{{ $end = strings.TrimSpace (printf "%v" .) }}{{ end }}
-    {{ if not $end }}{{ with index . "date_end" }}{{ $end = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
+    {{ with index . "start" }}{{ $start = . }}{{ end }}
+    {{ if not $start }}{{ with index . "date_start" }}{{ $start = . }}{{ end }}{{ end }}
+    {{ with index . "end" }}{{ $end = . }}{{ end }}
+    {{ if not $end }}{{ with index . "date_end" }}{{ $end = . }}{{ end }}{{ end }}
     {{ with index . "summary" }}{{ $summary = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ with index . "icon" }}{{ $icon = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ with index . "logo" }}{{ $logo = strings.TrimSpace (printf "%v" .) }}{{ end }}
@@ -133,8 +133,8 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
               <time>
                 {{ $start := index . "start" }}{{ $end := index . "end" }}
-                {{ if $start }}{{ $parsed := try (time $start) }}{{ if not $parsed.Err }}{{ $parsed.Value | time.Format $date_format }} –{{ else }}{{ $start }} –{{ end }}{{ end }}
-                {{ if $end }}{{ $parsed := try (time $end) }}{{ if not $parsed.Err }}{{ $parsed.Value | time.Format $date_format }}{{ else }}{{ $end }}{{ end }}{{ else }}<span class="text-primary-600 dark:text-primary-400 font-medium">{{ i18n "present" | default "Present" }}</span>{{ end }}
+                {{ if $start }}{{ $start | time.Format $date_format }} –{{ end }}
+                {{ if $end }}{{ $end | time.Format $date_format }}{{ else }}<span class="text-primary-600 dark:text-primary-400 font-medium">{{ i18n "present" | default "Present" }}</span>{{ end }}
               </time>
             </div>
           </div>
@@ -203,8 +203,8 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
               <time>
                 {{ $start := index . "start" }}{{ $end := index . "end" }}
-                {{ if $start }}{{ $parsed := try (time $start) }}{{ if not $parsed.Err }}{{ $parsed.Value | time.Format $date_format }} –{{ else }}{{ $start }} –{{ end }}{{ end }}
-                {{ if $end }}{{ $parsed := try (time $end) }}{{ if not $parsed.Err }}{{ $parsed.Value | time.Format $date_format }}{{ else }}{{ $end }}{{ end }}{{ else }}<span class="text-primary-600 dark:text-primary-400 font-medium">{{ i18n "present" | default "Present" }}</span>{{ end }}
+                {{ if $start }}{{ $start | time.Format $date_format }} –{{ end }}
+                {{ if $end }}{{ $end | time.Format $date_format }}{{ else }}<span class="text-primary-600 dark:text-primary-400 font-medium">{{ i18n "present" | default "Present" }}</span>{{ end }}
               </time>
             </div>
           </div>
