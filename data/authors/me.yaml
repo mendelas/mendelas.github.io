@@ -59,6 +59,8 @@ education:
     institution: Tohoku University
     start: 2024-04-01
     end: 2026-03-31
+    summary: |
+      Conducted research on localization and navigation for lunar rovers in featureless environments at the Space Robotics Lab.
     button:
       text: Space Robotics Lab
       url: https://astro2.mech.tohoku.ac.jp/
