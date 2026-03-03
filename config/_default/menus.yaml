@@ -22,3 +22,21 @@ main:
   # - name: Courses
   #   url: courses/
   #   weight: 40
+
+ja:
+  main:
+    - name: バイオ
+      url: /ja/
+      weight: 10
+    - name: 論文
+      url: /ja/publications/
+      weight: 11
+    - name: ニュース
+      url: /ja/#news
+      weight: 13
+    - name: 経歴
+      url: /ja/experience/
+      weight: 20
+    - name: プロジェクト
+      url: /ja/projects/
+      weight: 30
