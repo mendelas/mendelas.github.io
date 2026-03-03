@@ -67,6 +67,7 @@ sections:
       count: 5
       archive:
         enable: true
+        text: "See all"
       filters:
         author: ''
         category: ''
