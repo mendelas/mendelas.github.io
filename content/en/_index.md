@@ -112,7 +112,7 @@ sections:
       title: ""
       text: |
         <div style="text-align:right; margin-top:-1rem;">
-        <a href="/blog/" style="display:inline-flex;align-items:center;gap:0.4rem;font-weight:600;font-size:0.9rem;color:var(--color-primary-600);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;">All News →</a>
+        <a href="/#news" style="display:inline-flex;align-items:center;gap:0.4rem;font-weight:600;font-size:0.9rem;color:var(--color-primary-600);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;">All News →</a>
         </div>
     design:
       columns: '1'

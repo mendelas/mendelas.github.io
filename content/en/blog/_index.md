@@ -1,4 +1,6 @@
 ---
-title: Blog
-view: article-grid
+title: News
+_build:
+  render: never
+  list: local
 ---

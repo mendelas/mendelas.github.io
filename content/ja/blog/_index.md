@@ -1,4 +1,6 @@
 ---
 title: ニュース
-view: article-grid
+_build:
+  render: never
+  list: local
 ---

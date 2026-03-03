@@ -84,7 +84,7 @@ sections:
       title: ""
       text: |
         <div style="text-align:right; margin-top:-1rem;">
-        <a href="/ja/blog/" style="display:inline-flex;align-items:center;gap:0.4rem;font-weight:600;font-size:0.9rem;color:var(--color-primary-600);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;">ニュース一覧 →</a>
+        <a href="/ja/#news" style="display:inline-flex;align-items:center;gap:0.4rem;font-weight:600;font-size:0.9rem;color:var(--color-primary-600);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;">ニュース一覧 →</a>
         </div>
     design:
       columns: '1'
