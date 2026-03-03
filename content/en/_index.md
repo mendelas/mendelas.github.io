@@ -73,6 +73,8 @@ sections:
         exclude_future: false
         exclude_past: false
         publication_type: ''
+        folders:
+          - blog
       offset: 0
       order: desc
     design:
