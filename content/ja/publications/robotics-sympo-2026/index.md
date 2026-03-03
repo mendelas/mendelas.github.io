@@ -16,4 +16,10 @@ publication_short: ""
 abstract: ""
 summary: ""
 featured: false
+
+links:
+  - type: pdf
+    url: ""
+  - type: slides
+    url: ""
 ---

@@ -17,4 +17,10 @@ publication_short: "P-81"
 abstract: ""
 summary: ""
 featured: false
+
+links:
+  - type: pdf
+    url: ""
+  - type: slides
+    url: ""
 ---

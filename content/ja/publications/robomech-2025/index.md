@@ -17,4 +17,10 @@ publication_short: "2A2-R02"
 abstract: ""
 summary: ""
 featured: false
+
+links:
+  - type: pdf
+    url: ""
+  - type: slides
+    url: ""
 ---

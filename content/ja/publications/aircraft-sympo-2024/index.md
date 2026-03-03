@@ -13,4 +13,10 @@ publication_short: "1E06"
 abstract: ""
 summary: ""
 featured: false
+
+links:
+  - type: pdf
+    url: ""
+  - type: slides
+    url: ""
 ---
