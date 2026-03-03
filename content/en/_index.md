@@ -85,6 +85,8 @@ sections:
       page_type: blog
       count: 5
       filters:
+        folders:
+          - blog
         author: ''
         category: ''
         tag: ''
