@@ -85,28 +85,28 @@ sections:
   #         - events
   #   design:
   #     view: card
-  # - block: collection
-  #   id: news
-  #   content:
-  #     title: Recent News
-  #     subtitle: ''
-  #     text: ''
-  #     page_type: blog
-  #     count: 5
-  #     filters:
-  #       author: ''
-  #       category: ''
-  #       tag: ''
-  #       exclude_featured: false
-  #       exclude_future: false
-  #       exclude_past: false
-  #       publication_type: ''
-  #     offset: 0
-  #     order: desc
-  #   design:
-  #     view: card
-  #     spacing:
-  #       padding: [0, 0, 0, 0]
+  - block: collection
+    id: news
+    content:
+      title: Recent News
+      subtitle: ''
+      text: ''
+      page_type: blog
+      count: 5
+      filters:
+        author: ''
+        category: ''
+        tag: ''
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ''
+      offset: 0
+      order: desc
+    design:
+      view: card
+      spacing:
+        padding: [0, 0, 0, 0]
   # - block: markdown
   #   content:
   #     title: ""
