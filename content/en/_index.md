@@ -67,15 +67,15 @@ sections:
       order: desc
     design:
       view: citation
-  # - block: markdown
-  #   content:
-  #     title: ""
-  #     text: |
-  #       <div style="text-align:right; margin-top:0.25rem;">
-  #       <a class="btn btn-primary" href="/publications/">View all publications →</a>
-  #       </div>
-  #   design:
-  #     columns: '1'
+  - block: markdown
+    content:
+      title: ""
+      text: |
+        <div style="text-align:right; margin-top:-1rem;">
+        <a href="/publications/" style="display:inline-flex;align-items:center;gap:0.4rem;font-weight:600;font-size:0.9rem;color:var(--color-primary-600);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;">All Publications →</a>
+        </div>
+    design:
+      columns: '1'
   # - block: collection
   #   id: talks
   #   content:
@@ -107,15 +107,15 @@ sections:
       view: card
       spacing:
         padding: [0, 0, 0, 0]
-  # - block: markdown
-  #   content:
-  #     title: ""
-  #     text: |
-  #       <div style="text-align:right; margin-top:0.25rem;">
-  #       <a class="btn btn-primary" href="/blog/">View all news →</a>
-  #       </div>
-  #   design:
-  #     columns: '1'
+  - block: markdown
+    content:
+      title: ""
+      text: |
+        <div style="text-align:right; margin-top:-1rem;">
+        <a href="/blog/" style="display:inline-flex;align-items:center;gap:0.4rem;font-weight:600;font-size:0.9rem;color:var(--color-primary-600);text-decoration:none;border-bottom:2px solid currentColor;padding-bottom:2px;">All News →</a>
+        </div>
+    design:
+      columns: '1'
   - block: cta-card
     demo: true # Only display this section in the HugoBlox Kit demo site
     content:

@@ -1,8 +1,6 @@
 ---
 title: Radio-Based Localization and ISAC for Autonomous Systems
 date: 2025-04-01
-image:
-  filename: 6g_outline.png
 summary: >
   Research on Integrated Sensing and Communication (ISAC) for next-generation wireless
   networks (6G/Beyond 5G), developing signal processing and protocol design methods

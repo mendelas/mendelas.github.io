@@ -1,8 +1,6 @@
 ---
 title: Localization and Navigation for Lunar/Planetary Rovers
 date: 2024-04-01
-image:
-  filename: moonraker.jpg
 summary: >
   Research on robust state estimation and autonomous navigation for rovers operating
   in extreme environments with minimal geometric features, such as the lunar surface.

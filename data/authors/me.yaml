@@ -23,9 +23,6 @@ affiliations:
     url: https://tr.is.tohoku.ac.jp/
 
 links:
-  - icon: at-symbol
-    url: mailto:ikeno.kota.q7@dc.tohoku.ac.jp
-    label: E-mail Me
   - icon: brands/x
     url: https://x.com/ikeno_rs
   - icon: brands/github
@@ -47,6 +44,7 @@ interests:
 education:
   - degree: PhD Computer Science
     institution: Tohoku University
+    logo: tough-robotics.png
     start: 2026-04-01
     # end: 2029-03-31
     summary: |
@@ -57,6 +55,7 @@ education:
       icon: hero/arrow-down-tray
   - degree: MS AeroSpace Engineering
     institution: Tohoku University
+    logo: space-robotics.png
     start: 2024-04-01
     end: 2026-03-31
     summary: |
@@ -67,12 +66,14 @@ education:
       icon: hero/arrow-down-tray
   - degree: BS AeroSpace Engineering
     institution: Osaka Metropolitan University
+    logo: omu.svg
     start: 2020-04-01
     end: 2024-03-31
 
 experience:
   - role: Research Assistant
     org: National Institute of Information and Communications Technology (NICT)
+    logo: nict.svg
     start: 2026-04-01
     #end: 2026-03-31
     summary: |
@@ -84,6 +85,7 @@ experience:
 
   - role: Research Assistant
     org: National Institute of Advanced Industrial Science and Technology (AIST)
+    logo: aist.png
     start: 2024-11-01
     # end: 2026-03-31
     summary: |
@@ -95,6 +97,7 @@ experience:
 
   - role: Space Robotics Intern
     org: Space Quarters
+    logo: space-quarters.png
     start: 2022-01-01
     end: 2025-03-31
     summary: |
