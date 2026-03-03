@@ -107,6 +107,18 @@ experience:
       url: https://space-quarters.com/
       icon: hero/arrow-down-tray
 
+  - role: Small Satellite Developer
+    org: Space System and Space Science Research Center (SSSRC), Osaka Metropolitan University
+    logo: omu.svg
+    start: 2020-04-01
+    end: 2024-03-31
+    summary: |
+      Developed the communications subsystem for OMUSAT-3 and Hirogari small satellites, covering telemetry, telecommand, uplink/downlink, and SSTV broadcasting of Earth imagery for amateur radio operators.
+    button:
+      text: SSSRC website
+      url: https://www.omu.ac.jp/eng/sssrc/
+      icon: hero/arrow-down-tray
+
 skills:
   - name: Technical Skills
     items:

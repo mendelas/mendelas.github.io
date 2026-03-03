@@ -103,6 +103,18 @@ experience:
       url: https://space-quarters.com/
       icon: hero/arrow-down-tray
 
+  - role: 小型人工衛星開発者
+    org: 大阪公立大学 宇宙システム・宇宙科学研究センター（SSSRC）
+    logo: omu.svg
+    start: 2020-04-01
+    end: 2024-03-31
+    summary: |
+      OMUSAT-3 およびひろがりの通信系を担当。テレメトリ・テレコマンド・アップリンク/ダウンリンク全般を設計・実装し，アマチュア無線家向けSSTVによる地球画像放送ミッションにも携わった。
+    button:
+      text: SSSRCサイト
+      url: https://www.omu.ac.jp/eng/sssrc/
+      icon: hero/arrow-down-tray
+
 skills:
   - name: 技術スキル
     items:
