@@ -146,8 +146,15 @@ languages:
     label: Native
 
 awards:
-  # - title: Best Paper Award
-  #   awarder: NeurIPS
-  #   date: "2022-12-01"
-  #   summary: Awarded for groundbreaking work on efficient training of large models.
-  #   icon: hero/trophy
+  - title: 3rd Place, Precise Positioning Challenge 2023
+    awarder: Japan Institute of Navigation (GPS/GNSS Symposium 2023)
+    date: "2023-10-01"
+    icon: hero/trophy
+  - title: President's Commendation, Osaka Metropolitan University (FY2023)
+    awarder: Osaka Metropolitan University
+    date: "2024-03-01"
+    icon: hero/trophy
+  - title: Academic Excellence Award, Osaka Prefecture University (FY2021)
+    awarder: Osaka Prefecture University
+    date: "2022-03-01"
+    icon: hero/trophy
