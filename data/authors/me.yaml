@@ -5,8 +5,8 @@ name:
   display: Kota Ikeno
   given: Kota
   family: Ikeno
-  alternate: ''  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
+  alternate: ""
+  pronunciation: ""
   pronouns: he/him
 postnominals:
   - PhD
@@ -38,7 +38,7 @@ interests:
   - Physical AI
   - SLAM
   - Integrated Sensing and Communication (ISAC)
-  - Wireless Sensing & Signal Processing 
+  - Wireless Sensing & Signal Processing
   - Space Robotics
 
 education:

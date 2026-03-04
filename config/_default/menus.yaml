@@ -11,7 +11,7 @@ main:
     url: /publications/
     weight: 11
   - name: News
-    url: /blog/
+    url: /news/
     weight: 13
   - name: Experience
     url: experience/

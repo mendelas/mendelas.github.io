@@ -54,7 +54,7 @@ sections:
       title: 最近のニュース
       subtitle: ''
       text: ''
-      page_type: blog
+      page_type: news
       count: 5
       archive:
         enable: true

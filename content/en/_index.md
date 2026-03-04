@@ -63,7 +63,7 @@ sections:
       title: Recent News
       subtitle: ''
       text: ''
-      page_type: blog
+      page_type: news
       count: 5
       archive:
         enable: true
@@ -77,7 +77,7 @@ sections:
         exclude_past: false
         publication_type: ''
         folders:
-          - blog
+          - news
       offset: 0
       order: desc
     design:

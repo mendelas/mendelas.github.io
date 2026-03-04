@@ -6,7 +6,7 @@ main:
     url: /ja/publications/
     weight: 11
   - name: ニュース
-    url: /ja/blog/
+    url: /ja/news/
     weight: 13
   - name: 経験
     url: /ja/experience/
