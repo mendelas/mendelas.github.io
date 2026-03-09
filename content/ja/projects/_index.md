@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: 主要プロジェクト
-      text: ものを作ることが好きです。これまで取り組んできたプロジェクトの一部をご紹介します。
+      text: 
       filters:
         folders:
           - projects

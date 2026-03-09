@@ -67,6 +67,10 @@ education:
     logo: omu.svg
     start: 2020-04-01
     end: 2024-03-31
+    button:
+      text: GNSSグループ
+      url: https://www.omu.ac.jp/eng/gnss/
+      icon: hero/arrow-down-tray
 
 experience:
   - role: NICT RA
