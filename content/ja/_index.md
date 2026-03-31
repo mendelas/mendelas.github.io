@@ -30,9 +30,9 @@ sections:
       title: '📚 研究について'
       subtitle: ''
       text: |-
-        私は東北大学の博士課程学生であり，Tough Robotics Lab のメンバーとして，自律移動に不可欠な Simultaneous Localization and Mapping（SLAM）を研究しています。自律走行中の通信は安全上の理由から途絶させないことが基本とされていますが，現実環境でこれを達成することは極めて困難です。そこで私は，Integrated Sensing and Communication（ISAC）の概念に基づき，ロボットの自己位置推定精度と通信品質を同時に最適化する手法の開発に取り組んでいます。
+        東北大学博士後期課程 Tough Robotics Lab所属．ロボットの自律移動に不可欠なSimultaneous Localization and Mapping (SLAM)の研究を主に行う．また，Integrated Sensing and Communication (ISAC)の概念に基づき，自律走行中の通信とセンシングの品質を同時に最適化する手法についての研究にも従事．自律走行中の通信品質を担保しながら，位置推定精度の向上を実現する新たな研究分野を開拓する．
 
-        研究協力のご相談はお気軽にどうぞ 😃
+        研究協力のご相談はお気軽にどうぞ
 
     design:
       columns: '1'

@@ -9,16 +9,16 @@ name:
   pronunciation: ''
   pronouns: he/him
 postnominals:
-  - 博士前期課程
+  - 博士後期課程
 status:
   icon: "🤖"
-role: 東北大学 博士後期課程 / タフロボット研究室
+role: 東北大学 博士後期課程 / Tough Robotics Lab 
 bio: |
-  ロバストな自律システムのための展開可能な Physical AI を研究しています。
-  ロボティクスと無線センシングを組み合わせ，困難な環境でも高精度に動作する自己位置推定・地図生成システムの開発に取り組んでいます。
+  ロボットの自律移動に不可欠な自己位置推定・地図生成の研究者．
+  ロボティクスと無線通信を組み合わせた新しいアプローチで，困難な環境でも高精度に動作するロボットシステムの開発に取り組んでいる．
 
 affiliations:
-  - name: タフロボット研究室
+  - name: Tough Robotics Lab
     url: https://tr.is.tohoku.ac.jp/
 
 links:
@@ -57,7 +57,7 @@ education:
     start: 2024-04-01
     end: 2026-03-31
     summary: |
-      宇宙ロボット研究室にて，特徴のない環境における月面ローバの自己位置推定・ナビゲーション手法を研究。
+      宇宙ロボット研究室にて，特徴のない環境における月面ローバの自己位置推定・ナビゲーション手法を研究．
     button:
       text: 宇宙ロボット研究室
       url: https://astro2.mech.tohoku.ac.jp/
@@ -78,7 +78,7 @@ experience:
     logo: nict.svg
     start: 2026-04-01
     summary: |
-      Wi-Fi 信号をセンサとして活用する手法の研究を実施。トップジャーナルに採択済み。
+      Wi-Fi 信号をセンサとして活用する手法の研究を実施。トップジャーナルに採択済み．
     button:
       text: 研究室サイト
       url: https://www.nict.go.jp/resil/
@@ -89,7 +89,7 @@ experience:
     logo: aist.png
     start: 2024-11-01
     summary: |
-      電波と LiDAR-IMU SLAM の密結合に関する研究を実施。トップジャーナルに採択済み。
+      電波と LiDAR-IMU SLAM の密結合に関する研究を実施．トップジャーナルに採択済み．
     button:
       text: 研究室サイト
       url: https://www.digiarc.aist.go.jp/
@@ -101,7 +101,7 @@ experience:
     start: 2022-01-01
     end: 2025-03-31
     summary: |
-      宇宙構造物建設のための溶接ロボットに関する研究を実施。
+      宇宙構造物建設のための溶接ロボットに関する研究を実施．
     button:
       text: 企業サイト
       url: https://space-quarters.com/
