@@ -6,12 +6,14 @@ sections:
   - block: collection
     content:
       title: News
-      page_type: news
+      count: 500
       filters:
         folders:
           - news
       order: desc
+      archive:
+        enable: false
     design:
       view: card
-      columns: '4'
+      columns: '3'
 ---
