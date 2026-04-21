@@ -32,6 +32,8 @@ links:
     url: https://scholar.google.com/citations?user=example
   - icon: academicons/orcid
     url: https://orcid.org/my-orcid?orcid=0009-0001-3669-9429
+  - icon: custom/researchmap
+    url: https://researchmap.jp/kota-ikeno
 
 interests:
   - Physical AI
