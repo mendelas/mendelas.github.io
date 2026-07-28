@@ -18,6 +18,6 @@ I presented at **ROBOMECH 2026** (JSME Conference on Robotics and Mechatronics, 
 - **Authors:** Kota Ikeno (Tohoku University), Kazuya Yoshida (Tohoku University), Kazunori Ohno (Tohoku University)
 - **Session:** 2A2-M03
 
-{{< figure src="IMG_4666.jpg" >}}
+{{< figure src="IMG_4644.jpg" >}}
 
 {{< x user="ikeno_rs" id="2072508868509446148" >}}
