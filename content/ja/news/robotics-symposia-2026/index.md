@@ -18,4 +18,4 @@ tags:
 
 {{< figure src="IMG_4158.jpg" >}}
 
-{{< tweet user="ikeno_rs" id="2033819103857938857" >}}
+{{< x user="ikeno_rs" id="2033819103857938857" >}}

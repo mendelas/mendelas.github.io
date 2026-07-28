@@ -1,3 +1,7 @@
+# 日本語の文言オーバーライド。
+# ここに無いキーは HugoBlox モジュールの i18n/ja.yaml が使われる。
+# 英語側の対応する文言は i18n/en.yaml にある。片方だけ足さないこと。
+
 about_me:
   other: "プロフィール"
 
@@ -6,3 +10,29 @@ experience:
 
 more_posts:
   other: "すべて見る"
+
+read_more:
+  other: "続きを読む"
+
+callout_note:
+  other: "メモ"
+
+questions:
+  other: "質問"
+
+faq:
+  other: "よくある質問"
+
+docs:
+  other: "ドキュメント"
+
+btn_doi:
+  other: "DOI"
+
+poweredby_button:
+  other: "サイトを作る →"
+
+# CSL 標準外の独自 publication type（国内学会）。
+# content/*/publications/*/index.md の publication_types: ["paper-conference-domestic"] に対応。
+pub_paper_conference_domestic:
+  other: "国内学会"

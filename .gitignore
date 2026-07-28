@@ -67,3 +67,7 @@ Desktop.ini
 
 *.log
 npm-debug.log*
+
+# npm 由来（本リポジトリは pnpm 管理）
+package-lock.json
+go.sum

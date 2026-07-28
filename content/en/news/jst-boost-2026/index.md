@@ -16,4 +16,4 @@ I am pleased to announce that I have been selected for the **JST BOOST Program f
 
 This program supports early-career researchers working at the frontier of AI research in Japan, providing a 3-year fellowship to accelerate cutting-edge work in next-generation AI and its applications.
 
-{{< tweet user="ikeno_rs" id="2034253966574530655" >}}
+{{< x user="ikeno_rs" id="2034253966574530655" >}}

@@ -1,11 +1,11 @@
 ---
-title: "大阪府立大と室蘭工大で開発した『ひろがり』の運用の現状報告"
+title: "Current Operational Status of HIROGARI, Developed by Osaka Prefecture University and Muroran Institute of Technology"
 authors:
-  - 池野航太
+  - me
 date: "2021-12-01T00:00:00Z"
 publishDate: "2021-12-01T00:00:00Z"
 publication_types: ["paper-conference-domestic"]
-publication: "日本航空宇宙学会関西支部 ライト祭 2021"
+publication: "Wright Memorial Festival 2021, Kansai Branch, Japan Society for Aeronautical and Space Sciences (JSASS)"
 publication_short: ""
 abstract: ""
 summary: ""

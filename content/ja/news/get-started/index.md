@@ -4,7 +4,7 @@ summary: 個人の研究ウェブサイトを公開しました。
 date: 2026-03-03
 
 authors:
-  - me
+  - me-ja
 
 tags:
   - ニュース

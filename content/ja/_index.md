@@ -48,6 +48,7 @@ sections:
       order: desc
     design:
       view: citation
+      columns: '2'
   - block: collection
     id: news
     content:
@@ -58,6 +59,7 @@ sections:
       count: 5
       archive:
         enable: true
+        text: "すべて見る"
       filters:
         author: ''
         category: ''
@@ -66,10 +68,13 @@ sections:
         exclude_future: false
         exclude_past: false
         publication_type: ''
+        folders:
+          - news
       offset: 0
       order: desc
     design:
       view: card
       spacing:
         padding: [0, 0, 0, 0]
+      columns: '3'
 ---

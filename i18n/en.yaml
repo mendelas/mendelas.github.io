@@ -1,0 +1,9 @@
+# English string overrides.
+# Keys not listed here fall back to the HugoBlox module's i18n/en.yaml.
+# The Japanese counterparts live in i18n/ja.yaml. Never add to only one side.
+
+# Non-CSL custom publication type (domestic Japanese conferences).
+# Matches publication_types: ["paper-conference-domestic"] in
+# content/*/publications/*/index.md.
+pub_paper_conference_domestic:
+  other: "Domestic conference paper"

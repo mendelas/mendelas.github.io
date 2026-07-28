@@ -14,4 +14,4 @@ I completed the **AIST Innovation School DC Course** (National Institute of Adva
 
 The program covered a broad range of practical skills essential for researchers, including project management, intellectual property, technology transfer, and communication in research settings.
 
-{{< tweet user="ikeno_rs" id="2034253337735184470" >}}
+{{< x user="ikeno_rs" id="2034253337735184470" >}}

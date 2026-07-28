@@ -18,4 +18,4 @@ I presented at the **31st Robotics Symposia** (March 17–18, Hakodate).
 
 {{< figure src="IMG_4158.jpg" >}}
 
-{{< tweet user="ikeno_rs" id="2033819103857938857" >}}
+{{< x user="ikeno_rs" id="2033819103857938857" >}}

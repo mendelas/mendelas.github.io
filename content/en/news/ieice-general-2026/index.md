@@ -16,6 +16,6 @@ I attended the **IEICE General Conference 2026** (March 9–13) as a listener to
 
 The conference provided a valuable opportunity to overview ongoing work across academia and industry in the ISAC field, and to gather insights relevant to my own research on radio-based localization and sensing.
 
-{{< tweet user="ikeno_rs" id="2032042753421726179" >}}
+{{< x user="ikeno_rs" id="2032042753421726179" >}}
 
 {{< figure src="IMG_4104.jpg" >}}
