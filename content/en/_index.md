@@ -49,6 +49,10 @@ sections:
       title: Recent Publications
       text: ''
       count: 5
+      # 明示しないと「件数 > count」のときしか出ない自動表示になる
+      archive:
+        enable: true
+        text: "See all"
       filters:
         folders:
           - publications

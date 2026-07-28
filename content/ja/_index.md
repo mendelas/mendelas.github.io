@@ -41,6 +41,10 @@ sections:
       title: 最近の論文
       text: ''
       count: 5
+      # 明示しないと「件数 > count」のときしか出ない自動表示になる
+      archive:
+        enable: true
+        text: "すべて見る"
       filters:
         folders:
           - publications
