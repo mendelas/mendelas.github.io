@@ -7,7 +7,7 @@ authors:
   - me-ja
 
 tags:
-  - News
+  - ニュース
 ---
 
 **東北大学大学院情報科学研究科** 博士後期課程に入学しました．[タフロボット研究室](https://tr.is.tohoku.ac.jp/) に所属します．
