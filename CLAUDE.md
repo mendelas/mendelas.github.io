@@ -54,8 +54,9 @@ config/_default/
   params.yaml          Hugo Blox のテーマ・SEO 等
 i18n/en.yaml           英語 UI 文言の上書き
 i18n/ja.yaml           日本語 UI 文言の上書き
-layouts/blox/resume-experience/block.html
-                       logo 対応のため上書きした Hugo Blox ブロック
+layouts/_partials/hbx/blocks/resume-experience/block.html
+                       logo 対応のため上書きした Hugo Blox ブロック。
+                       置き場所については「既知の落とし穴」を参照
 scripts/check-lang-parity.sh
                        日英のズレ検出（コンテンツ変更後に必ず実行）
 ```
@@ -134,3 +135,11 @@ hugo --minify --printI18nWarnings 2>&1 | grep -v '^WARN  Template'
   ずれると一覧の並び順やセクション振り分けが言語間で食い違う。
 - **メニューは `menus.yaml` と `menus.ja.yaml` の2ファイル。** 項目を足すなら両方に足す。
   リンク先のページが両言語に存在することも確認する。
+- **ブロックの上書きは `layouts/_partials/hbx/blocks/<ブロック名>/block.html` に置く。**
+  `layouts/blox/<ブロック名>/block.html` は Hugo の探索対象外で、**エラーも警告も出ないまま
+  黙って無視される**。実際にこれで `logo` 対応の上書きが長期間効いておらず、
+  `data/authors/*.yaml` の `logo:` が無視されていた。
+  上書きが効いているか確かめるには、ファイル先頭に一時的にコメントを入れてビルドし、
+  出力 HTML に現れるかを見る。
+- **経歴ページのロゴは `static/media/logos/` に置く。** 上書きブロックが
+  `/media/logos/<ファイル名>` という絶対パスで参照するため、`assets/` 側に置いても使われない。
