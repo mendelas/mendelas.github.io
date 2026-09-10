@@ -18,4 +18,21 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* Organisation logos are single-ink artwork, so one of the two themes always
+     swallows them. Flip them to a solid silhouette in the theme where they would
+     otherwise disappear, and keep the original colours in the theme that works.
+     Set `logo_mono: dark|light` on an education/experience entry to opt in. */
+  .logo-ink-dark {
+    filter: none;
+  }
+  .dark .logo-ink-dark {
+    filter: brightness(0) invert(1);
+  }
+  .logo-ink-light {
+    filter: brightness(0);
+  }
+  .dark .logo-ink-light {
+    filter: none;
+  }
 </style>

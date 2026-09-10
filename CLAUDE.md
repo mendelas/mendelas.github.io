@@ -57,6 +57,11 @@ i18n/ja.yaml           日本語 UI 文言の上書き
 layouts/_partials/hbx/blocks/resume-experience/block.html
                        logo 対応のため上書きした Hugo Blox ブロック。
                        置き場所については「既知の落とし穴」を参照
+layouts/_partials/hbx/blocks/resume-awards/block.html
+                       受賞歴ブロックの上書き。`content.field` で
+                       data/authors/*.yaml の任意のリスト（awards /
+                       grants / fellowships）を描画でき、`date_end` で
+                       期間表示にも対応する
 scripts/check-lang-parity.sh
                        日英のズレ検出（コンテンツ変更後に必ず実行）
 ```
@@ -141,5 +146,11 @@ hugo --minify --printI18nWarnings 2>&1 | grep -v '^WARN  Template'
   `data/authors/*.yaml` の `logo:` が無視されていた。
   上書きが効いているか確かめるには、ファイル先頭に一時的にコメントを入れてビルドし、
   出力 HTML に現れるかを見る。
+- **ロゴは単色のものが多く、どちらかのテーマで消える。** 黒インク（産総研・
+  Tough Robotics・大阪公立大）は暗い背景で、白インク（NICT・Space Robotics Lab）は
+  明るい背景で見えなくなる。`data/authors/*.yaml` の各エントリに
+  `logo_mono: dark`（黒インク）/ `logo_mono: light`（白インク）を付けると、
+  消える側のテーマでだけシルエット化される。CSS は
+  `layouts/_partials/hooks/head-end/custom-styles.html` の `.logo-ink-*`。
 - **経歴ページのロゴは `static/media/logos/` に置く。** 上書きブロックが
   `/media/logos/<ファイル名>` という絶対パスで参照するため、`assets/` 側に置いても使われない。

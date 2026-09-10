@@ -47,6 +47,7 @@ education:
   - degree: PhD Computer Science
     institution: Tohoku University
     logo: tough-robotics.png
+    logo_mono: dark
     start: 2026-04-01
     # end: 2029-03-31
     summary: |
@@ -58,6 +59,7 @@ education:
   - degree: MS AeroSpace Engineering
     institution: Tohoku University
     logo: space-robotics.png
+    logo_mono: light
     start: 2024-04-01
     end: 2026-03-31
     summary: |
@@ -69,6 +71,7 @@ education:
   - degree: BS AeroSpace Engineering
     institution: Osaka Metropolitan University
     logo: omu.svg
+    logo_mono: dark
     start: 2020-04-01
     end: 2024-03-31
     button:
@@ -80,10 +83,11 @@ experience:
   - role: NICT RA
     org: National Institute of Information and Communications Technology (NICT)
     logo: nict.svg
+    logo_mono: light
     start: 2026-04-01
     #end: 2026-03-31
     summary: |
-      Conducting research on methods for utillizing Wi-Fi Signals as Sensors. Accepted by a top-tier journal.
+      Conducting research on methods for utillizing Wi-Fi Signals as Sensors.
     button:
       text: Lab website
       url: https://www.nict.go.jp/resil/
@@ -92,10 +96,11 @@ experience:
   - role: AIST RA
     org: National Institute of Advanced Industrial Science and Technology (AIST)
     logo: aist.png
+    logo_mono: dark
     start: 2024-11-01
-    # end: 2026-03-31
+    end: 2026-03-31
     summary: |
-      Conducting research on tightly coupling radio waves with LiDAR-IMU SLAM. accepted by a top-tier journal.
+      Conducted research on tightly coupling radio waves with LiDAR-IMU SLAM.
     button:
       text: Lab website
       url: https://www.digiarc.aist.go.jp/
@@ -104,6 +109,7 @@ experience:
   - role: Space Robotics Intern
     org: Space Quarters
     logo: space-quarters.png
+    logo_mono: dark
     start: 2022-01-01
     end: 2025-03-31
     summary: |
@@ -116,6 +122,7 @@ experience:
   - role: Small Satellite Developer
     org: Space System and Space Science Research Center (SSSRC), Osaka Metropolitan University
     logo: omu.svg
+    logo_mono: dark
     start: 2020-04-01
     end: 2024-03-31
     summary: |
@@ -124,36 +131,6 @@ experience:
       text: SSSRC website
       url: https://www.omu.ac.jp/eng/sssrc/
       icon: hero/arrow-down-tray
-
-skills:
-  - name: Technical Skills
-    items:
-      - label: Python
-        level: 5
-      - label: C++
-        level: 5
-      - label: ROS
-        level: 4
-      - label: SLAM Algorithms
-        level: 5
-      - label: Wireless Signal Processing
-        level: 4
-  - name: Research & Communication
-    items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
-  - name: Sports
-    items:
-      - label: Soccer
-        level: 5
-      - label: Marathon
-        level: 4
-      - label: Table Tennis
-        level: 3
 
 languages:
   - name: English
@@ -176,3 +153,21 @@ awards:
     awarder: Osaka Prefecture University
     date: "2022-03-01"
     icon: hero/trophy
+
+grants:
+  - title: JST BOOST Program for Next-Generation AI Areas
+    awarder: Japan Science and Technology Agency (JST)
+    date: "2026-04-01"
+    date_end: "2029-03-31"
+    icon: hero/banknotes
+    summary: |
+      Three-year research funding for early-career researchers working at the frontier of next-generation AI and its applications.
+
+fellowships:
+  - title: Takashima Science and Technology Promotion Foundation Scholarship
+    awarder: Takashima Science and Technology Promotion Foundation
+    date: "2026-04-01"
+    date_end: "2029-03-31"
+    icon: hero/academic-cap
+    summary: |
+      Doctoral scholarship supporting research in science and technology.

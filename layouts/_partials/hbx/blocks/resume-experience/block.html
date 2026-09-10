@@ -31,7 +31,7 @@
 {{ $experience := slice }}
 {{ range $experience_iter }}
   {{ if reflect.IsMap . }}
-    {{ $role := "" }}{{ $org := "" }}{{ $start := "" }}{{ $end := "" }}{{ $summary := "" }}{{ $icon := "" }}{{ $logo := "" }}{{ $tags := slice }}{{ $button_url := "" }}{{ $button_text := "" }}{{ $button_icon := "" }}
+    {{ $role := "" }}{{ $org := "" }}{{ $start := "" }}{{ $end := "" }}{{ $summary := "" }}{{ $icon := "" }}{{ $logo := "" }}{{ $logo_mono := "" }}{{ $tags := slice }}{{ $button_url := "" }}{{ $button_text := "" }}{{ $button_icon := "" }}
     {{ with index . "role" }}{{ $role = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ if not $role }}{{ with index . "position" }}{{ $role = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
     {{ with index . "org" }}{{ $org = strings.TrimSpace (printf "%v" .) }}{{ end }}
@@ -43,6 +43,7 @@
     {{ with index . "summary" }}{{ $summary = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ with index . "icon" }}{{ $icon = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ with index . "logo" }}{{ $logo = strings.TrimSpace (printf "%v" .) }}{{ end }}
+    {{ with index . "logo_mono" }}{{ $logo_mono = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ $tags_raw := index . "tags" }}
     {{ if reflect.IsSlice $tags_raw }}
       {{ range $tags_raw }}{{ $tag := strings.TrimSpace (printf "%v" .) }}{{ if $tag }}{{ $tags = $tags | append $tag }}{{ end }}{{ end }}
@@ -54,7 +55,7 @@
       {{ with index $button_raw "icon" }}{{ $button_icon = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ end }}
     {{ if or $role $org }}
-      {{ $experience = $experience | append (dict "role" $role "org" $org "start" $start "end" $end "summary" $summary "icon" $icon "logo" $logo "tags" $tags "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
+      {{ $experience = $experience | append (dict "role" $role "org" $org "start" $start "end" $end "summary" $summary "icon" $icon "logo" $logo "logo_mono" $logo_mono "tags" $tags "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -70,7 +71,7 @@
 {{ $education := slice }}
 {{ range $education_iter }}
   {{ if reflect.IsMap . }}
-    {{ $degree := "" }}{{ $institution := "" }}{{ $start := "" }}{{ $end := "" }}{{ $summary := "" }}{{ $icon := "" }}{{ $logo := "" }}{{ $button_url := "" }}{{ $button_text := "" }}{{ $button_icon := "" }}
+    {{ $degree := "" }}{{ $institution := "" }}{{ $start := "" }}{{ $end := "" }}{{ $summary := "" }}{{ $icon := "" }}{{ $logo := "" }}{{ $logo_mono := "" }}{{ $button_url := "" }}{{ $button_text := "" }}{{ $button_icon := "" }}
     {{ with index . "degree" }}{{ $degree = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ if not $degree }}{{ with index . "area" }}{{ $degree = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
     {{ with index . "institution" }}{{ $institution = strings.TrimSpace (printf "%v" .) }}{{ end }}
@@ -81,6 +82,7 @@
     {{ with index . "summary" }}{{ $summary = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ with index . "icon" }}{{ $icon = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ with index . "logo" }}{{ $logo = strings.TrimSpace (printf "%v" .) }}{{ end }}
+    {{ with index . "logo_mono" }}{{ $logo_mono = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ $button_raw := index . "button" }}
     {{ if reflect.IsMap $button_raw }}
       {{ with index $button_raw "url" }}{{ $button_url = strings.TrimSpace (printf "%v" .) }}{{ end }}
@@ -88,7 +90,7 @@
       {{ with index $button_raw "icon" }}{{ $button_icon = strings.TrimSpace (printf "%v" .) }}{{ end }}
     {{ end }}
     {{ if or $degree $institution }}
-      {{ $education = $education | append (dict "degree" $degree "institution" $institution "start" $start "end" $end "summary" $summary "icon" $icon "logo" $logo "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
+      {{ $education = $education | append (dict "degree" $degree "institution" $institution "start" $start "end" $end "summary" $summary "icon" $icon "logo" $logo "logo_mono" $logo_mono "button" (dict "url" $button_url "text" $button_text "icon" $button_icon)) }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -122,7 +124,10 @@
             <div class="flex items-start gap-4">
               {{ $logo := index . "logo" }}
               {{ if $logo }}
-              <img src="/media/logos/{{ $logo }}" alt="" class="h-10 w-auto object-contain shrink-0 mt-0.5" style="max-width:90px">
+              {{ $logo_class := "h-10 w-auto object-contain shrink-0 mt-0.5" }}
+              {{ $logo_mono := printf "%v" (index . "logo_mono") }}
+              {{ if eq $logo_mono "dark" }}{{ $logo_class = printf "%s logo-ink-dark" $logo_class }}{{ else if eq $logo_mono "light" }}{{ $logo_class = printf "%s logo-ink-light" $logo_class }}{{ end }}
+              <img src="/media/logos/{{ $logo }}" alt="" class="{{ $logo_class }}" style="max-width:90px">
               {{ end }}
               <div>
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">{{ index . "org" }}</h3>
@@ -192,7 +197,10 @@
             <div class="flex items-start gap-4">
               {{ $logo := index . "logo" }}
               {{ if $logo }}
-              <img src="/media/logos/{{ $logo }}" alt="" class="h-10 w-auto object-contain shrink-0 mt-0.5" style="max-width:90px">
+              {{ $logo_class := "h-10 w-auto object-contain shrink-0 mt-0.5" }}
+              {{ $logo_mono := printf "%v" (index . "logo_mono") }}
+              {{ if eq $logo_mono "dark" }}{{ $logo_class = printf "%s logo-ink-dark" $logo_class }}{{ else if eq $logo_mono "light" }}{{ $logo_class = printf "%s logo-ink-light" $logo_class }}{{ end }}
+              <img src="/media/logos/{{ $logo }}" alt="" class="{{ $logo_class }}" style="max-width:90px">
               {{ end }}
               <div>
                 <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400 transition-colors">{{ index . "degree" }}</h3>

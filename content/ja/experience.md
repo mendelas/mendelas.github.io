@@ -18,14 +18,30 @@ sections:
       date_format: '2006年1月'
       # Education or Experience section first?
       is_education_first: false
-  - block: resume-skills
-    content:
-      title: スキル・趣味
-      username: me-ja
   - block: resume-awards
+    id: awards
     content:
       title: 受賞歴
       username: me-ja
+      field: awards
+    design:
+      date_format: '2006年1月'
+  - block: resume-awards
+    id: grants
+    content:
+      title: 研究費
+      username: me-ja
+      field: grants
+    design:
+      date_format: '2006年1月'
+  - block: resume-awards
+    id: fellowships
+    content:
+      title: フェローシップ・奨学金
+      username: me-ja
+      field: fellowships
+    design:
+      date_format: '2006年1月'
   - block: resume-languages
     content:
       title: 言語

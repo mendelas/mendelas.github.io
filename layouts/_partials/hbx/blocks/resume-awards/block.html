@@ -1,0 +1,104 @@
+{{/* Hugo Blox: Awards - customized so one block can render any award-like list
+     (awards / grants / fellowships) via `content.field`, and so entries may span
+     a period via an optional `date_end`. */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+{{ $design := $block.design }}
+{{ if not (reflect.IsMap $design) }}{{ $design = dict }}{{ end }}
+
+{{ $username := "me" }}
+{{ $username_raw := index $content "username" }}
+{{ if eq (printf "%T" $username_raw) "string" }}
+  {{ $username = strings.TrimSpace $username_raw }}
+{{ end }}
+{{/* Read the author data directly: `functions/get_author_profile` only exposes a
+     fixed set of keys, so custom lists such as `grants` never reach the block. */}}
+{{ $profile := index site.Data.authors ($username | urlize) }}
+{{ if not (reflect.IsMap $profile) }}{{ $profile = dict }}{{ end }}
+
+{{/* Which profile key to read: awards (default), grants, fellowships, ... */}}
+{{ $field := "awards" }}
+{{ $field_raw := index $content "field" }}
+{{ if eq (printf "%T" $field_raw) "string" }}
+  {{ $field = strings.TrimSpace $field_raw | default "awards" }}
+{{ end }}
+
+{{ $title := "" }}
+{{ $title_raw := index $content "title" }}
+{{ if eq (printf "%T" $title_raw) "string" }}
+  {{ $title = strings.TrimSpace $title_raw }}
+{{ end }}
+
+{{ $date_format := "January 2006" }}
+{{ $date_format_raw := index $design "date_format" }}
+{{ if eq (printf "%T" $date_format_raw) "string" }}
+  {{ $date_format = strings.TrimSpace $date_format_raw | default "January 2006" }}
+{{ end }}
+
+{{ $items_raw := index $profile $field }}
+{{ $items_iter := slice }}
+{{ if reflect.IsSlice $items_raw }}
+  {{ $items_iter = $items_raw }}
+{{ else if and $items_raw (reflect.IsMap $items_raw) }}
+  {{ $items_iter = slice $items_raw }}
+{{ end }}
+
+{{ $items := slice }}
+{{ range $items_iter }}
+  {{ if reflect.IsMap . }}
+    {{ $item_title := "" }}{{ $awarder := "" }}{{ $summary := "" }}{{ $icon := "hero/trophy" }}{{ $url := "" }}
+    {{ $date := "" }}{{ $date_end := "" }}{{ $sort_key := "" }}
+    {{ with index . "title" }}{{ $item_title = strings.TrimSpace (printf "%v" .) }}{{ end }}
+    {{ with index . "awarder" }}{{ $awarder = strings.TrimSpace (printf "%v" .) }}{{ end }}
+    {{ with index . "summary" }}{{ $summary = strings.TrimSpace (printf "%v" .) }}{{ end }}
+    {{ with index . "icon" }}{{ $icon = strings.TrimSpace (printf "%v" .) | default "hero/trophy" }}{{ end }}
+    {{ with index . "url" }}{{ $url = strings.TrimSpace (printf "%v" .) }}{{ end }}
+    {{ if not $url }}{{ with index . "certificate_url" }}{{ $url = strings.TrimSpace (printf "%v" .) }}{{ end }}{{ end }}
+    {{ with index . "date" }}{{ $date = . }}{{ end }}
+    {{ if not $date }}{{ with index . "start" }}{{ $date = . }}{{ end }}{{ end }}
+    {{ with index . "date_end" }}{{ $date_end = . }}{{ end }}
+    {{ if not $date_end }}{{ with index . "end" }}{{ $date_end = . }}{{ end }}{{ end }}
+    {{ if $date }}{{ $sort_key = printf "%v" ($date | time.Format "2006-01-02") }}{{ end }}
+    {{ if $item_title }}
+      {{ $items = $items | append (dict "title" $item_title "awarder" $awarder "summary" $summary "icon" $icon "url" $url "date" $date "date_end" $date_end "sort_key" $sort_key) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $items = sort $items "sort_key" "desc" }}
+
+{{ if gt (len $items) 0 }}
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+  {{ with $title }}<div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ . }}</div>{{ end }}
+  <div class="w-full flex flex-col gap-6">
+    {{ range $items }}
+    <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-7 h-7 text-primary-600 dark:text-primary-300">
+          {{ partial "functions/get_icon" (dict "name" (index . "icon") "attributes" "class='w-6 h-6'") }}
+        </span>
+        {{ $url := index . "url" }}
+        {{ if $url }}
+          <a href="{{ $url | safeURL }}" target="_blank" rel="noopener" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">{{ index . "title" }}</a>
+        {{ else }}
+          <span>{{ index . "title" }}</span>
+        {{ end }}
+      </h5>
+      {{ $awarder := index . "awarder" }}{{ $date := index . "date" }}{{ $date_end := index . "date_end" }}
+      {{ if or $awarder $date }}
+      <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+        {{ with $awarder }}{{ . }}{{ end }}
+        {{ if and $awarder $date }} &#8729; {{ end }}
+        {{ with $date }}{{ . | time.Format $date_format }}{{ end }}
+        {{ with $date_end }} – {{ . | time.Format $date_format }}{{ end }}
+      </div>
+      {{ end }}
+      {{ with index . "summary" }}
+      <div class="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 leading-relaxed">{{ . | emojify | $page.RenderString }}</div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

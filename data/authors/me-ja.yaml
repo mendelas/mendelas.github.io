@@ -46,6 +46,7 @@ education:
   - degree: 博士後期課程 情報科学
     institution: 東北大学
     logo: tough-robotics.png
+    logo_mono: dark
     start: 2026-04-01
     summary: |
       Physical AI，SLAM，統合センシングコミュニケーション（ISAC）に関する研究。無線を活用した自己位置推定・地図生成システムを研究しています。
@@ -56,6 +57,7 @@ education:
   - degree: 修士課程 航空宇宙工学
     institution: 東北大学
     logo: space-robotics.png
+    logo_mono: light
     start: 2024-04-01
     end: 2026-03-31
     summary: |
@@ -67,6 +69,7 @@ education:
   - degree: 学士課程 航空宇宙工学
     institution: 大阪公立大学
     logo: omu.svg
+    logo_mono: dark
     start: 2020-04-01
     end: 2024-03-31
     button:
@@ -78,9 +81,10 @@ experience:
   - role: NICT RA
     org: 情報通信研究機構（NICT）
     logo: nict.svg
+    logo_mono: light
     start: 2026-04-01
     summary: |
-      Wi-Fi 信号をセンサとして活用する手法の研究を実施。トップジャーナルに採択済み．
+      Wi-Fi 信号をセンサとして活用する手法の研究を実施。
     button:
       text: 研究室サイト
       url: https://www.nict.go.jp/resil/
@@ -88,10 +92,12 @@ experience:
 
   - role: AIST RA
     org: 産業技術総合研究所（AIST）
-    logo: aist.png
+    logo: aist-ja.png
+    logo_mono: dark
     start: 2024-11-01
+    end: 2026-03-31
     summary: |
-      電波と LiDAR-IMU SLAM の密結合に関する研究を実施．トップジャーナルに採択済み．
+      電波と LiDAR-IMU SLAM の密結合に関する研究を実施．
     button:
       text: 研究室サイト
       url: https://www.digiarc.aist.go.jp/
@@ -100,6 +106,7 @@ experience:
   - role: 宇宙ロボティクスインターン
     org: スペースクォーターズ株式会社
     logo: space-quarters.png
+    logo_mono: dark
     start: 2022-01-01
     end: 2025-03-31
     summary: |
@@ -112,6 +119,7 @@ experience:
   - role: 小型人工衛星開発者
     org: 大阪公立大学 宇宙システム・宇宙科学研究センター（SSSRC）
     logo: omu.svg
+    logo_mono: dark
     start: 2020-04-01
     end: 2024-03-31
     summary: |
@@ -120,36 +128,6 @@ experience:
       text: SSSRCサイト
       url: https://www.omu.ac.jp/eng/sssrc/
       icon: hero/arrow-down-tray
-
-skills:
-  - name: 技術スキル
-    items:
-      - label: Python
-        level: 5
-      - label: C++
-        level: 5
-      - label: ROS
-        level: 4
-      - label: SLAM アルゴリズム
-        level: 5
-      - label: 無線信号処理
-        level: 4
-  - name: 研究・コミュニケーション
-    items:
-      - label: 学術論文執筆
-        level: 5
-      - label: 学会発表
-        level: 4
-      - label: 研究費申請
-        level: 4
-  - name: スポーツ
-    items:
-      - label: サッカー
-        level: 5
-      - label: マラソン
-        level: 4
-      - label: 卓球
-        level: 3
 
 languages:
   - name: 英語
@@ -172,3 +150,21 @@ awards:
     awarder: 大阪府立大学
     date: "2022-03-01"
     icon: hero/trophy
+
+grants:
+  - title: JST 次世代AI人材育成プログラム（BOOST）
+    awarder: 国立研究開発法人 科学技術振興機構（JST）
+    date: "2026-04-01"
+    date_end: "2029-03-31"
+    icon: hero/banknotes
+    summary: |
+      次世代AIおよびその応用領域の最前線で研究に取り組む若手研究者を対象とした，3年間の研究支援．
+
+fellowships:
+  - title: 高島科学技術振興財団 奨学生
+    awarder: 公益財団法人 高島科学技術振興財団
+    date: "2026-04-01"
+    date_end: "2029-03-31"
+    icon: hero/academic-cap
+    summary: |
+      科学技術分野の研究を対象とした博士後期課程学生向けの奨学金．
