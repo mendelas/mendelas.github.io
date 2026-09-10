@@ -15,7 +15,7 @@
 {{ end }}
 {{/* Read the author data directly: `functions/get_author_profile` only exposes a
      fixed set of keys, so custom lists such as `grants` never reach the block. */}}
-{{ $profile := index site.Data.authors ($username | urlize) }}
+{{ $profile := index hugo.Data.authors ($username | urlize) }}
 {{ if not (reflect.IsMap $profile) }}{{ $profile = dict }}{{ end }}
 
 {{/* Which profile key to read: awards (default), grants, fellowships, ... */}}

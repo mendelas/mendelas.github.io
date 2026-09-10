@@ -1,7 +1,7 @@
 en:
-  languageCode: en-us
+  locale: en-us
   contentDir: content/en
 
 ja:
-  languageCode: ja-jp
+  locale: ja-jp
   contentDir: content/ja

@@ -75,7 +75,7 @@ scripts/check-lang-parity.sh
 
 ## ビルドとプレビュー
 
-必要なもの: Hugo **extended** 0.156.0（`hugoblox.yaml` の `hugo_version` で固定）、
+必要なもの: Hugo **extended** 0.166.0（`hugoblox.yaml` の `build.hugo_version` で固定）、
 Node.js 20、Go（Hugo モジュール取得に必要）。
 
 ```bash
