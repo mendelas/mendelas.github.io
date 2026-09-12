@@ -92,7 +92,8 @@ hugoblox:
     align: center                       # left | center | right
     # Feature toggles
     search: true
-    theme_toggle: true
+    # Dark ("night") mode only - no light/dark switch (theme.mode is pinned to 'dark')
+    theme_toggle: false
     theme_picker: false
     language_switcher: true
     # Call-to-action button

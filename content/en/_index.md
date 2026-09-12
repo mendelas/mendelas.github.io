@@ -38,9 +38,13 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I am a PhD student at Tohoku University as a member of the Tough Robotics Lab. My research focuses on Simultaneous Localization and Mapping (SLAM) essential for autonomous driving. Communication generally remains uninterrupted during autonomous driving for safety reasons. However, achieving this in real-world environments is extremely challenging. Therefore, based on the concept of Integrated Sensing and Communication (ISAC), I am developing a method to simultaneously optimize both the accuracy of a robot's self-localization and the quality of its communication.
+        I am a PhD student at Tohoku University and a member of the Tough Robotics Lab. My research lies at the intersection of **robotics, wireless intelligence, and Physical AI**, with the goal of building autonomous systems that can operate reliably in complex real-world environments.
 
-        Please reach out to collaborate 😃
+        I am particularly interested in how **wireless communication and sensing can become an integral part of robotic intelligence**, rather than being treated as separate supporting technologies. My work explores ideas spanning **wireless sensing, Integrated Sensing and Communication (ISAC), autonomous robotics, and automation**.
+
+        Ultimately, I aim to develop **embodied autonomous systems that can perceive, communicate, reason, and act in the physical world**.
+
+        **Interested in robotics, wireless intelligence, or Physical AI? Let's collaborate.**
 
     design:
       columns: '1'

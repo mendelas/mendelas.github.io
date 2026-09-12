@@ -14,8 +14,9 @@ status:
   icon: "🤖"
 role: 東北大学 博士後期課程 / Tough Robotics Lab 
 bio: |
-  ロボットの自律移動に不可欠な自己位置推定・地図生成の研究者．
-  ロボティクスと無線通信を組み合わせた新しいアプローチで，困難な環境でも高精度に動作するロボットシステムの開発に取り組んでいる．
+  ## 身体性を持つ自律のための無線インテリジェンス
+
+  ロボティクス・自動化・無線インテリジェンスの交点にあるPhysical AIを探究し，物理世界を認識・理解し，物理世界と相互作用する自律システムの構築に取り組んでいる．
 
 affiliations:
   - name: Tough Robotics Lab
@@ -37,10 +38,9 @@ links:
 
 interests:
   - Physical AI
-  - SLAM
-  - 統合センシングコミュニケーション（ISAC）
-  - 無線センシング・信号処理
-  - 宇宙ロボティクス
+  - Robotics
+  - Automation
+  - Wireless Sensing
 
 education:
   - degree: 博士後期課程 情報科学

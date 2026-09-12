@@ -15,8 +15,9 @@ status:
   icon: "🤖"
 role: Phd Student at Tohoku University
 bio: |
-  Deployable Physical AI for reliable autonomy.
-  I build localization and mapping systems that stay robust in challenging environments by combining robotics and wireless sensing.
+  ## Wireless Intelligence for Embodied Autonomy
+
+  I explore Physical AI at the intersection of robotics, automation, and wireless intelligence, building autonomous systems that perceive, understand, and interact with the physical world.
 
 affiliations:
   - name: Tough Robotics Lab
@@ -38,10 +39,9 @@ links:
 
 interests:
   - Physical AI
-  - SLAM
-  - Integrated Sensing and Communication (ISAC)
-  - Wireless Sensing & Signal Processing
-  - Space Robotics
+  - Robotics
+  - Automation
+  - Wireless Sensing
 
 education:
   - degree: PhD Computer Science
