@@ -19,6 +19,27 @@
     margin-right: auto;
   }
 
+  /* resume-biography-3 hard-codes the Interests heading at text-xl while the
+     summary and Education headings grow to text-2xl/text-3xl, so Interests looks
+     undersized on wide screens. It is the only h3 in the block without the
+     responsive classes; give it the same scale (Tailwind v4 sizes/breakpoints). */
+  .resume-biography h3.text-xl:not(.sm\:text-2xl) {
+    font-size: 1.25rem;
+    line-height: calc(1.75 / 1.25);
+  }
+  @media (min-width: 40rem) {
+    .resume-biography h3.text-xl:not(.sm\:text-2xl) {
+      font-size: 1.5rem;
+      line-height: calc(2 / 1.5);
+    }
+  }
+  @media (min-width: 64rem) {
+    .resume-biography h3.text-xl:not(.sm\:text-2xl) {
+      font-size: 1.875rem;
+      line-height: calc(2.25 / 1.875);
+    }
+  }
+
   /* Organisation logos are single-ink artwork, so one of the two themes always
      swallows them. Flip them to a solid silhouette in the theme where they would
      otherwise disappear, and keep the original colours in the theme that works.

@@ -1,5 +1,5 @@
 ---
-title: 'プロジェクト'
+title: 'Projects'
 date: 2024-05-19
 type: landing
 
@@ -11,7 +11,7 @@ design:
 sections:
   - block: collection
     content:
-      title: 主要プロジェクト
+      title: Selected Projects
       text: 
       filters:
         folders:

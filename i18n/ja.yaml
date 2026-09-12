@@ -5,8 +5,16 @@
 about_me:
   other: "プロフィール"
 
+# Section headings stay in English on the Japanese site too (site owner's choice);
+# only body text is Japanese.
 experience:
-  other: "経験"
+  other: "Experience"
+
+education:
+  other: "Education"
+
+interests:
+  other: "Interests"
 
 more_posts:
   other: "すべて見る"

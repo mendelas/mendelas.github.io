@@ -13,7 +13,7 @@ sections:
       username: me-ja
       text: ''
       headings:
-        about: ''
+        about: 'Wireless Intelligence for Embodied Autonomy'
         education: ''
         interests: ''
     design:
@@ -27,22 +27,22 @@ sections:
         shape: circle
   - block: markdown
     content:
-      title: '📚 研究について'
+      title: '📚 My Research'
       subtitle: ''
       text: |-
-        東北大学博士後期課程 Tough Robotics Lab所属．**ロボティクス，無線インテリジェンス，Physical AI**の交点を研究領域とし，複雑な実環境でも信頼して動作する自律システムの構築を目指している．
+        東北大学博士後期課程 Tough Robotics Lab所属．ロボティクス，無線インテリジェンス，Physical AIの交点を研究領域とし，複雑な実環境でも信頼して動作する自律システムの構築を目指している．
 
-        とくに関心があるのは，**無線通信とセンシングをロボット知能の外側にある支援技術として扱うのではなく，知能そのものを構成する一部として位置づける**という視点である．**無線センシング，Integrated Sensing and Communication (ISAC)，自律ロボティクス，自動化**にまたがるテーマに取り組んでいる．
+        とくに関心があるのは，無線通信とセンシングをロボット知能の外側にある支援技術として扱うのではなく，知能そのものを構成する一部として位置づけるという視点である．無線センシング，Integrated Sensing and Communication (ISAC)，自律ロボティクス，自動化にまたがるテーマに取り組んでいる．
 
-        最終的には，**物理世界を認識し，通信し，推論し，行動する身体性を持つ自律システム**の実現を目指している．
+        最終的には，物理世界を認識し，通信し，推論し，行動する身体性を持つ自律システムの実現を目指している．
 
-        **ロボティクス，無線インテリジェンス，Physical AIにご関心のある方は，ぜひ共同研究のご相談を．**
+        ロボティクス，無線インテリジェンス，Physical AIにご関心のある方は，ぜひ共同研究のご相談を．
 
     design:
       columns: '1'
   - block: collection
     content:
-      title: 最近の論文
+      title: Recent Publications
       text: ''
       count: 5
       # 明示しないと「件数 > count」のときしか出ない自動表示になる
@@ -60,7 +60,7 @@ sections:
   - block: collection
     id: news
     content:
-      title: 最近のニュース
+      title: Recent News
       subtitle: ''
       text: ''
       page_type: news

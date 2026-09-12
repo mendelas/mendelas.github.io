@@ -1,5 +1,5 @@
 ---
-title: 論文
+title: Publications
 cms_exclude: true
 type: landing
 
@@ -14,7 +14,7 @@ design:
 sections:
   - block: collection
     content:
-      title: 国内学会
+      title: Domestic Conference Papers
       # 0 = 全件表示。省略すると既定値 5 になり、6件目以降が黙って隠れる。
       count: 0
       filters:

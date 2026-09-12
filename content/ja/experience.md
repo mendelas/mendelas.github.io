@@ -1,5 +1,5 @@
 ---
-title: '経歴'
+title: 'Experience'
 date: 2023-10-24
 type: landing
 
@@ -21,7 +21,7 @@ sections:
   - block: resume-awards
     id: awards
     content:
-      title: 受賞歴
+      title: Awards
       username: me-ja
       field: awards
     design:
@@ -29,7 +29,7 @@ sections:
   - block: resume-awards
     id: grants
     content:
-      title: 研究費
+      title: Research Grants
       username: me-ja
       field: grants
     design:
@@ -37,13 +37,13 @@ sections:
   - block: resume-awards
     id: fellowships
     content:
-      title: フェローシップ・奨学金
+      title: Fellowships
       username: me-ja
       field: fellowships
     design:
       date_format: '2006年1月'
   - block: resume-languages
     content:
-      title: 言語
+      title: Languages
       username: me-ja
 ---

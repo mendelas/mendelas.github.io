@@ -1,16 +1,16 @@
 main:
-  - name: 経歴
+  - name: Bio
     url: /ja/
     weight: 10
-  - name: 研究業績
+  - name: Papers
     url: /ja/publications/
     weight: 11
-  - name: ニュース
+  - name: News
     url: /ja/news/
     weight: 13
-  - name: 経験
+  - name: Experience
     url: /ja/experience/
     weight: 20
-  - name: プロジェクト
+  - name: Projects
     url: /ja/projects/
     weight: 30
