@@ -1,7 +1,9 @@
 name: Build
 
 env:
-  NODE_VERSION: '20'
+  # Hugo 0.166 runs the Tailwind CLI with Node's --permission flag, which
+  # Node 20 rejects ("bad option"). Node 22.13+ understands it.
+  NODE_VERSION: '24'
 
 on:
   # Standalone trigger for PR validation
@@ -77,6 +79,20 @@ jobs:
         echo "HUGO_VERSION=$VERSION" >> $GITHUB_ENV
         echo "Using Hugo version: $VERSION"
 
+    # Cache dependencies (Go modules, node_modules) - stable, rarely changes.
+    # Restore before installing: restoring afterwards would overwrite the fresh
+    # install (including the postinstall tailwindcss link) with a stale copy.
+    - uses: actions/cache@v4
+      with:
+        path: |
+          /tmp/hugo_cache_runner/
+          node_modules/
+          modules/*/node_modules/
+        key: ${{ runner.os }}-hugo-deps-${{ hashFiles('**/go.mod', '**/package-lock.json',
+          '**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-hugo-deps-
+
     - name: Install dependencies
       run: |
         # Install Tailwind CLI if package.json exists
@@ -90,18 +106,6 @@ jobs:
       with:
         hugo-version: ${{ env.HUGO_VERSION }}
         extended: true
-
-    # Cache dependencies (Go modules, node_modules) - stable, rarely changes
-    - uses: actions/cache@v4
-      with:
-        path: |
-          /tmp/hugo_cache_runner/
-          node_modules/
-          modules/*/node_modules/
-        key: ${{ runner.os }}-hugo-deps-${{ hashFiles('**/go.mod', '**/package-lock.json',
-          '**/pnpm-lock.yaml') }}
-        restore-keys: |
-          ${{ runner.os }}-hugo-deps-
 
     # Cache Hugo resources (processed images, CSS) - invalidates only when assets/config change
     - uses: actions/cache@v4

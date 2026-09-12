@@ -84,8 +84,9 @@ hugo --minify --printI18nWarnings 2>&1 | grep -v '^WARN  Template'
 
 `WARN Template ... is unused` はモジュール由来のノイズなので無視してよい。
 
-Hugo/Node が入っていない環境なら、Hugo extended 0.156.0（`hugoblox.yaml` で固定）、
-Node 20、Go を用意する。Go は Hugo モジュールの取得に必要。
+Hugo/Node が入っていない環境なら、Hugo extended 0.166.0（`hugoblox.yaml` で固定）、
+Node 22.13 以上、Go を用意する。Go は Hugo モジュールの取得に必要。
+Node 20 では Tailwind の変換が `bad option: --permission` で落ちる。
 
 ---
 
