@@ -76,7 +76,16 @@ scripts/check-lang-parity.sh
 ## ビルドとプレビュー
 
 必要なもの: Hugo **extended** 0.166.0（`hugoblox.yaml` の `build.hugo_version` で固定）、
-Node.js 20、Go（Hugo モジュール取得に必要）。
+Node.js **22.13 以上**（CI は 24）、Go（Hugo モジュール取得に必要）。
+
+- Hugo 0.166 は Tailwind CLI を `node --permission ...` で起動する。Node 20 は
+  このフラグを知らず `bad option: --permission` でビルドが落ちる。
+- Hugo 0.166 は `security.exec.allow` の既定から `tailwindcss` を外したので、
+  `config/_default/hugo.yaml` で明示的に許可している。
+- pnpm が作る `node_modules/.bin/tailwindcss`（シェルラッパー）を Hugo が
+  認識できない（gohugoio/hugo#14852）。`package.json` の `postinstall`
+  （`scripts/link-tailwind-bin.mjs`）がエントリポイントへのシンボリックリンクに
+  張り替えている。上流で修正されたら削除してよい。
 
 ```bash
 pnpm install        # 初回のみ（Tailwind 等）
