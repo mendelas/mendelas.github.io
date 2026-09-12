@@ -17,6 +17,8 @@ sections:
         education: ''
         interests: ''
     design:
+      biography:
+        style: 'font-size: clamp(1.125rem, 1.05rem + 0.5vw, 1.375rem); line-height: 1.7;'
       background:
         gradient_mesh:
           enable: true
@@ -30,13 +32,13 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        東北大学博士後期課程 Tough Robotics Lab所属．ロボティクス，無線インテリジェンス，Physical AIの交点を研究領域とし，複雑な実環境でも信頼して動作する自律システムの構築を目指している．
+        東北大学博士後期課程に在籍し，Tough Robotics Labに所属しています．ロボティクス，無線インテリジェンス，Physical AIの交点を研究領域とし，複雑な実環境でも信頼して動作する自律システムの構築を目指しています．
 
-        とくに関心があるのは，無線通信とセンシングをロボット知能の外側にある支援技術として扱うのではなく，知能そのものを構成する一部として位置づけるという視点である．無線センシング，Integrated Sensing and Communication (ISAC)，自律ロボティクス，自動化にまたがるテーマに取り組んでいる．
+        とくに関心を持っているのは，無線通信とセンシングをロボット知能の外側にある支援技術として扱うのではなく，知能そのものを構成する一部として位置づけるという視点です．無線センシング，Integrated Sensing and Communication (ISAC)，自律ロボティクス，自動化にまたがるテーマに取り組んでいます．
 
-        最終的には，物理世界を認識し，通信し，推論し，行動する身体性を持つ自律システムの実現を目指している．
+        最終的には，物理世界を認識し，通信し，推論し，行動する身体性を持つ自律システムの実現を目標としています．
 
-        ロボティクス，無線インテリジェンス，Physical AIにご関心のある方は，ぜひ共同研究のご相談を．
+        ロボティクス，無線インテリジェンス，Physical AIにご関心のある方は，ぜひ共同研究のご相談をお寄せください．
 
     design:
       columns: '1'

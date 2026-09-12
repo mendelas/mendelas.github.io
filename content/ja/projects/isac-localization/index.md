@@ -2,8 +2,8 @@
 title: 無線を用いた自律システムの自己位置推定とISAC
 date: 2025-04-01
 summary: >
-  次世代無線ネットワーク（6G/Beyond 5G）に向けたIntegrated Sensing and Communication（ISAC）の研究。
-  ロボットの自己位置推定精度と通信品質を同時に最適化する信号処理・プロトコル設計手法を開発。
+  次世代無線ネットワーク（6G/Beyond 5G）に向けたIntegrated Sensing and Communication（ISAC）の研究です。
+  ロボットの自己位置推定精度と通信品質を同時に最適化する信号処理・プロトコル設計手法を開発しています。
 tags:
   - ISAC
   - SLAM
@@ -53,4 +53,4 @@ links:
 
 ## 所属
 
-東北大学 情報科学研究科 [Tough Robotics Lab](https://tr.is.tohoku.ac.jp/)にて実施。
+東北大学 情報科学研究科 [Tough Robotics Lab](https://tr.is.tohoku.ac.jp/)にて実施しています。

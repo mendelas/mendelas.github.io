@@ -10,9 +10,9 @@ name:
   pronouns: he/him
 postnominals:
   - 博士後期課程
-role: 東北大学 博士後期課程 / Tough Robotics Lab 
+role: 東北大学 博士後期課程 / Tough Robotics Lab
 bio: |
-  ロボティクス・自動化・無線インテリジェンスの交点にあるPhysical AIを探究し，物理世界を認識・理解し，物理世界と相互作用する自律システムの構築に取り組んでいる．
+  ロボティクス・自動化・無線インテリジェンスの交点にあるPhysical AIを探究し，物理世界を認識・理解し，物理世界と相互作用する自律システムの構築に取り組んでいます．
 
 affiliations:
   - name: Tough Robotics Lab
@@ -45,7 +45,7 @@ education:
     logo_mono: dark
     start: 2026-04-01
     summary: |
-      Physical AI，SLAM，統合センシングコミュニケーション（ISAC）に関する研究。無線を活用した自己位置推定・地図生成システムを研究しています。
+      Physical AI，SLAM，統合センシングコミュニケーション（ISAC）を対象に，無線を活用した自己位置推定・地図生成システムを研究しています。
     button:
       text: タフロボット研究室
       url: https://tr.is.tohoku.ac.jp/
@@ -57,7 +57,7 @@ education:
     start: 2024-04-01
     end: 2026-03-31
     summary: |
-      宇宙ロボット研究室にて，特徴のない環境における月面ローバの自己位置推定・ナビゲーション手法を研究．
+      宇宙ロボット研究室にて，特徴のない環境における月面ローバの自己位置推定・ナビゲーション手法を研究しました．
     button:
       text: 宇宙ロボット研究室
       url: https://astro2.mech.tohoku.ac.jp/
@@ -80,7 +80,7 @@ experience:
     logo_mono: light
     start: 2026-04-01
     summary: |
-      Wi-Fi 信号をセンサとして活用する手法の研究を実施。
+      Wi-Fi 信号をセンサとして活用する手法の研究を行っています。
     button:
       text: 研究室サイト
       url: https://www.nict.go.jp/resil/
@@ -93,7 +93,7 @@ experience:
     start: 2024-11-01
     end: 2026-03-31
     summary: |
-      電波と LiDAR-IMU SLAM の密結合に関する研究を実施．
+      電波と LiDAR-IMU SLAM の密結合に関する研究を行いました．
     button:
       text: 研究室サイト
       url: https://www.digiarc.aist.go.jp/
@@ -106,7 +106,7 @@ experience:
     start: 2022-01-01
     end: 2025-03-31
     summary: |
-      宇宙構造物建設のための溶接ロボットに関する研究を実施．
+      宇宙構造物建設のための溶接ロボットに関する研究を行いました．
     button:
       text: 企業サイト
       url: https://space-quarters.com/
@@ -119,7 +119,7 @@ experience:
     start: 2020-04-01
     end: 2024-03-31
     summary: |
-      OMUSAT-3 およびひろがりの通信系を担当。テレメトリ・テレコマンド・アップリンク/ダウンリンク全般を設計・実装し，アマチュア無線家向けSSTVによる地球画像放送ミッションにも携わった。
+      OMUSAT-3 およびひろがりの通信系を担当しました。テレメトリ・テレコマンド・アップリンク/ダウンリンク全般を設計・実装し，アマチュア無線家向けSSTVによる地球画像放送ミッションにも携わりました。
     button:
       text: SSSRCサイト
       url: https://www.omu.ac.jp/eng/sssrc/
@@ -154,7 +154,7 @@ grants:
     date_end: "2029-03-31"
     icon: hero/banknotes
     summary: |
-      次世代AIおよびその応用領域の最前線で研究に取り組む若手研究者を対象とした，3年間の研究支援．
+      次世代AIおよびその応用領域の最前線で研究に取り組む若手研究者を対象とした，3年間の研究支援です．
 
 fellowships:
   - title: 高島科学技術振興財団 奨学生
@@ -163,4 +163,4 @@ fellowships:
     date_end: "2029-03-31"
     icon: hero/academic-cap
     summary: |
-      科学技術分野の研究を対象とした博士後期課程学生向けの奨学金．
+      科学技術分野の研究を対象とした博士後期課程学生向けの奨学金です．

@@ -20,6 +20,9 @@ sections:
         education: ''
         interests: ''
     design:
+      # Bio text a notch above the block default (text-lg), scaling with the viewport
+      biography:
+        style: 'font-size: clamp(1.125rem, 1.05rem + 0.5vw, 1.375rem); line-height: 1.7;'
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
         gradient_mesh:
