@@ -67,5 +67,17 @@ markup:
     lineNos: false
 security:
   _merge: deep
+  exec:
+    # Hugo dropped '^tailwindcss$' from the default security.exec.allow list, but
+    # blox calls css.TailwindCSS, which execs the Tailwind CLI. The list replaces
+    # the default rather than extending it, so repeat Hugo's defaults here.
+    # https://gohugo.io/functions/css/tailwindcss/
+    allow:
+      - ^(dart-)?sass$
+      - ^go$
+      - ^git$
+      - ^node$
+      - ^postcss$
+      - ^tailwindcss$
 sitemap:
   _merge: deep
