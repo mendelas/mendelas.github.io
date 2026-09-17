@@ -1,0 +1,13 @@
+{{- /*
+  Hugo Blox's hb-head.js applies a theme stored in localStorage
+  ("wc-color-theme") before it looks at hugoblox.theme.mode. A visitor who
+  used the light/dark toggle before it was removed therefore keeps seeing the
+  theme they picked back then, not the pinned one. When the toggle is off and
+  the mode is pinned, drop the stored value so the site default wins. This
+  hook runs before hb-head.js, so there is no flash of the wrong theme.
+*/ -}}
+{{- $mode := (lower site.Params.hugoblox.theme.mode) | default "system" -}}
+{{- $toggle := site.Params.hugoblox.header.theme_toggle | default true -}}
+{{- if and (ne $mode "system") (not $toggle) -}}
+<script>try{localStorage.removeItem("wc-color-theme")}catch(e){}</script>
+{{- end -}}
