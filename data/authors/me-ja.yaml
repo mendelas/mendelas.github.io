@@ -157,6 +157,13 @@ grants:
       次世代AIおよびその応用領域の最前線で研究に取り組む若手研究者を対象とした，3年間の研究支援です．
 
 fellowships:
+  - title: Sky大浦ICT奨学財団 奨学生
+    awarder: 公益財団法人 Sky大浦ICT奨学財団
+    date: "2026-04-01"
+    date_end: "2029-03-31"
+    icon: hero/academic-cap
+    summary: |
+      ICT分野での活躍を志す学生を対象とした，博士後期課程学生向けの給付型奨学金です．
   - title: 高島科学技術振興財団 奨学生
     awarder: 公益財団法人 高島科学技術振興財団
     date: "2026-04-01"

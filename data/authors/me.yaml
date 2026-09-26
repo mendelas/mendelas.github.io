@@ -160,6 +160,13 @@ grants:
       Three-year research funding for early-career researchers working at the frontier of next-generation AI and its applications.
 
 fellowships:
+  - title: Sky Oura ICT Scholarship Foundation Scholarship
+    awarder: Sky Oura ICT Scholarship Foundation
+    date: "2026-04-01"
+    date_end: "2029-03-31"
+    icon: hero/academic-cap
+    summary: |
+      Non-repayable doctoral scholarship for students who aspire to build careers in the ICT field.
   - title: Takashima Science and Technology Promotion Foundation Scholarship
     awarder: Takashima Science and Technology Promotion Foundation
     date: "2026-04-01"
