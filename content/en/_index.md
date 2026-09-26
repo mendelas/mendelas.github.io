@@ -36,21 +36,6 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-  - block: markdown
-    content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        I am a PhD student at Tohoku University and a member of the Tough Robotics Lab. My research lies at the intersection of robotics, wireless intelligence, and Physical AI, with the goal of building autonomous systems that can operate reliably in complex real-world environments.
-
-        I am particularly interested in how wireless communication and sensing can become an integral part of robotic intelligence, rather than being treated as separate supporting technologies. My work explores ideas spanning wireless sensing, Integrated Sensing and Communication (ISAC), autonomous robotics, and automation.
-
-        Ultimately, I aim to develop embodied autonomous systems that can perceive, communicate, reason, and act in the physical world.
-
-        Interested in robotics, wireless intelligence, or Physical AI? Let's collaborate.
-
-    design:
-      columns: '1'
   - block: collection
     content:
       title: Recent Publications
